@@ -9,7 +9,6 @@ Hence the major difference between these is that XML file.
 
 1. `oscillator_catalyst.sh` -- renders data using Catalyst
 2. `oscillator_libsim.sh` -- renders data using Libsim
-5. `oscillator_python.sh` -- processes data using Python
 
 Loosely coupled / in transit
 ----------------------------
@@ -26,7 +25,6 @@ XML file in the end-point as in the tightly coupled demos.
 ### End point
 1. `adios_endpoint_catalyst.sh` -- renders incoming data using Catalyst
 2. `adios_endpoint_libsim.sh` -- renders incoming data using Libsim
-3. `adios_endpoint_python.sh` -- processes incoming data using Python
 
 Other
 -----
