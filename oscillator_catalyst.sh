@@ -2,14 +2,24 @@
 
 n=4
 b=64
-dt=0.5
+dt=0.05
 
-echo "+ module load sensei/2.1.1-catalyst-shared"
-module load sensei/2.1.1-catalyst-shared
+script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
+mkdir -p ./configs
+cp ${script_dir}/configs/* ./configs
+
+echo "+ module use /usr/common/software/sensei/modulefiles"
+module use /usr/common/software/sensei/modulefiles
+
+echo "+ module load sensei/2.1.0-catalyst-shared"
+module load sensei/2.1.0-catalyst-shared
 
 set -x
 
 cat ./configs/random_2d_${b}_catalyst.xml
 
-mpiexec -n ${n} oscillator -b ${n} -t ${dt} -s ${b},${b},1 -g 1 \
-    -f ./configs/random_2d_${b}_catalyst.xml ./configs/random_2d_${b}.osc
+srun -n ${n} \
+    oscillator -b ${n} -t ${dt} -s ${b},${b},1 -g 1 -p 0 \
+    -f ./configs/random_2d_${b}_catalyst.xml \
+    ./configs/random_2d_${b}.osc
