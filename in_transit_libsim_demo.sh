@@ -31,27 +31,6 @@ srun -N 1 -n ${n} -r 0 -l \
     -f ./configs/random_2d_${b}_adios.xml \
     ./configs/random_2d_${b}.osc 2>&1 | sed "s/.*/$red&$wht/" &
 
-set +x
-
-echo "Waiting for writer to start ${delay} sec"
-while [[ True ]]
-do
-  echo -n '.'
-  if [[ -e "${file}_writer_info.txt" ]]
-  then
-    break
-  elif [[ ${max_delay} -le 0 ]]
-  then
-    echo "ERROR: max delay exceded"
-    exit -1
-  else
-    sleep ${delay}s
-    let max_delay=${max_delay}-${delay}
-  fi
-done
-
-set -x
-
 cat ./configs/random_2d_${b}_libsim_it.xml | sed "s/.*/$blu&$wht/"
 
 srun -N 1 -n ${n} -r 1 \
