@@ -19,12 +19,8 @@ end is selected via an XML file passed into the end point during start up.
 Hence the major diffence between these is that XML file. We used the same
 XML file in the end-point as in the tightly coupled demos.
 
-### Simulation
-1. `oscillator_adios.sh` -- sends data through an ADIOS writer
-
-### End point
-1. `adios_endpoint_catalyst.sh` -- renders incoming data using Catalyst
-2. `adios_endpoint_libsim.sh` -- renders incoming data using Libsim
+1. `in_transit_catalyst_demo.sh` -- renders incoming data using Catalyst
+2. `in_transit_libsim_demo.sh` -- renders incoming data using Libsim
 
 Other
 -----
