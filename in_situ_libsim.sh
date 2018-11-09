@@ -2,7 +2,7 @@
 
 n=4
 b=64
-dt=0.05
+dt=0.1
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 bld=`echo -e '\e[1m'`
 red=`echo -e '\e[31m'`
