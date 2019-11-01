@@ -4531,7 +4531,7 @@
                                 <Field name="plotName" type="string">Plot0000</Field>
                                 <Field name="pluginID" type="string">Pseudocolor_1.0</Field>
                                 <Field name="sourceID" type="string">SOURCE00</Field>
-                                <Field name="variableName" type="string">mesh/data</Field>
+                                <Field name="variableName" type="string">mesh/cell/data</Field>
                                 <Field name="active" type="bool">true</Field>
                                 <Field name="hidden" type="bool">false</Field>
                                 <Field name="realized" type="bool">true</Field>
@@ -4721,7 +4721,7 @@
                                 <Field name="plotName" type="string">Plot0003</Field>
                                 <Field name="pluginID" type="string">Contour_1.0</Field>
                                 <Field name="sourceID" type="string">SOURCE00</Field>
-                                <Field name="variableName" type="string">mesh/data</Field>
+                                <Field name="variableName" type="string">mesh/cell/data</Field>
                                 <Field name="active" type="bool">false</Field>
                                 <Field name="hidden" type="bool">false</Field>
                                 <Field name="realized" type="bool">true</Field>

@@ -1,0 +1,7 @@
+<sensei>
+  <transport type="adios1" filename="random_2d_64.bp" method="FLEXPATH" enabled="1" >
+    <mesh name="mesh">
+        <cell_arrays> data </cell_arrays>
+    </mesh>
+  </transport>
+</sensei>
