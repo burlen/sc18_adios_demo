@@ -10,11 +10,12 @@ grn=`echo -e '\e[32m'`
 blu=`echo -e '\e[36m'`
 wht=`echo -e '\e[0m'`
 
+
 echo "+ module use /usr/common/software/sensei/modulefiles"
 module use /usr/common/software/sensei/modulefiles
 
-echo "+ module load sensei/2.1.1-libsim-shared"
-module load sensei/2.1.1-libsim-shared
+echo "+ module load sensei/3.1.0-libsim-shared"
+module load sensei/3.1.0-libsim-shared
 
 set -x
 

@@ -13,8 +13,8 @@ wht=`echo -e '\e[0m'`
 echo "+ module use /usr/common/software/sensei/modulefiles"
 module use /usr/common/software/sensei/modulefiles
 
-echo "+ module load sensei/2.1.1-catalyst-shared"
-module load sensei/2.1.1-catalyst-shared
+echo "+ module load sensei/3.1.0-catalyst-shared"
+module load sensei/3.1.0-catalyst-shared
 
 set -x
 
