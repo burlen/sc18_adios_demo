@@ -1,0 +1,7 @@
+<sensei>
+  <analysis type="ascent" actions="configs/random_2d_64_ascent.json" enabled="1" >
+    <mesh name="mesh">
+        <cell_arrays> data </cell_arrays>
+    </mesh>
+  </analysis>
+</sensei>
