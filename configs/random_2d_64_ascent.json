@@ -1,0 +1,27 @@
+[
+  {
+    "action": "add_scenes",
+    "scenes":
+    {
+      "s1":
+      {
+        "plots":
+        {
+          "p1":
+          {
+            "type": "pseudocolor",
+            "field": "data",
+            "color_table": { "name": "rainbow desaturated" }
+          }
+        },
+        "image_prefix": "random_2d_64_ascent_%05d"
+      }
+    }
+  },
+  {
+    "action": "execute"
+  },
+  {
+    "action": "reset"
+  }
+]
