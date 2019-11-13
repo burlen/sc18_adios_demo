@@ -1,5 +1,23 @@
 [
   {
+    "action": "add_pipelines",
+    "pipelines":
+    {
+      "pl1":
+      {
+        "f1":
+        {
+          "type": "contour",
+          "params":
+          {
+            "field": "data",
+            "iso_values": [1.0]
+          }
+        }
+      }
+    }
+  },
+  {
     "action": "add_scenes",
     "scenes":
     {
@@ -12,9 +30,25 @@
             "type": "pseudocolor",
             "field": "data",
             "color_table": { "name": "rainbow desaturated" }
+          },
+          "p2":
+          {
+            "type": "mesh",
+            "pipeline": "pl1"
           }
         },
-        "image_prefix": "random_2d_64_ascent_%05d"
+
+        "renders":
+        {
+          "r1":
+          {
+            "image_width": 800,
+            "image_height": 800,
+            "image_prefix": "random_2d_64_ascent_%05d",
+            "bg_color": [1.0, 1.0, 1.0],
+            "fg_color": [0.0, 0.0, 0.0]
+          }
+        }
       }
     }
   },
