@@ -1,5 +1,5 @@
-SC18 Tutorial Demos
-===================
+ISC19 Tutorial Demos
+====================
 
 Tightly couled / in situ
 ------------------------

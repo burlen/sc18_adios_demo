@@ -6,21 +6,18 @@ dt=0.1
 delay=1
 max_delay=100
 file=random_2d_${b}.bp
-script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
 bld=`echo -e '\e[1m'`
 red=`echo -e '\e[31m'`
 grn=`echo -e '\e[32m'`
 blu=`echo -e '\e[36m'`
 wht=`echo -e '\e[0m'`
 
-mkdir -p ./configs
-cp ${script_dir}/configs/* ./configs
-
 echo "+ module use /usr/common/software/sensei/modulefiles"
 module use /usr/common/software/sensei/modulefiles
 
-echo "+ module load sensei/2.1.0-libsim-shared"
-module load sensei/2.1.0-libsim-shared
+echo "+ module load sensei/2.1.1-libsim-shared"
+module load sensei/2.1.1-libsim-shared
 
 set -x
 
