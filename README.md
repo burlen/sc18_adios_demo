@@ -1,5 +1,5 @@
-ISC19 Tutorial Demos
-====================
+Tutorial Demos
+==============
 
 Tightly couled / in situ
 ------------------------
