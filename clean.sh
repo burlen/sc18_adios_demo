@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rm -rf mesh* *.png *.vlog
+rm -rf mesh* *.png *.vlog *.txt

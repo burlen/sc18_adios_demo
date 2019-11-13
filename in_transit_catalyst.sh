@@ -31,13 +31,6 @@ srun -N 1 -n ${n} -r 0 -l \
 cat ./configs/random_2d_${b}_adios1_read.xml | sed "s/.*/$blu&$wht/"
 cat ./configs/random_2d_${b}_catalyst.xml | sed "s/.*/$blu&$wht/"
 
-<<<<<<< HEAD
 srun -N 1 -n ${n} -r 1 \
-    ADIOSAnalysisEndPoint -r flexpath \
-    -f ./configs/random_2d_${b}_catalyst.xml \
-    random_2d_${b}.bp  2>&1 | sed "s/.*/$grn&$wht/"
-=======
-mpiexec -n ${n} \
     SENSEIEndPoint -t ./configs/random_2d_${b}_adios1_read.xml \
     -a ./configs/random_2d_${b}_catalyst.xml 2>&1 | sed "s/.*/$grn&$wht/"
->>>>>>> 6f11852... updates for sensei 3.0.0
