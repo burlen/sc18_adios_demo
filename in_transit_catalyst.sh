@@ -2,7 +2,7 @@
 
 n=4
 b=64
-dt=0.5
+dt=0.25
 delay=1
 max_delay=100
 file=random_2d_${b}.bp
