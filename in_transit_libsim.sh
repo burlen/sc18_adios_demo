@@ -2,7 +2,7 @@
 
 n=4
 b=64
-dt=0.5
+dt=0.25
 delay=1
 max_delay=100
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"

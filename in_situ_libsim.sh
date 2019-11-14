@@ -2,7 +2,7 @@
 
 n=4
 b=64
-dt=0.1
+dt=0.25
 bld=`echo -e '\e[1m'`
 red=`echo -e '\e[31m'`
 grn=`echo -e '\e[32m'`
